@@ -1,0 +1,10 @@
+.read_contanier{
+    text-align: justify;
+    padding: 5px 10px;
+    margin: auto;
+    height: 580px;
+    width: 1200px;
+}
+.read_contanier p{
+    font-size: 17px;
+}

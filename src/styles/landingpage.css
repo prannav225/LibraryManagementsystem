@@ -1,0 +1,89 @@
+body {
+    background-image: url('C:\Users\PRANAV\Desktop\Projects\Jspi WEB\React JS\Library_Management_System\public\images/bgimg3.png   ');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #252525;
+}
+
+.text {
+    
+    text-align: left;
+    margin: 0px 100px;
+    position: relative;
+    bottom: 100px;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    right: 590px;
+    bottom: 40px;
+    margin: 0;
+}
+
+.welcome {
+    display: inline-block;
+    font-family: 'Bebas Neue';
+    font-size: 50px;
+    margin-right: 940px;
+    position: relative;
+    top: 45px;
+}
+
+.welcome1 {
+    display: inline-block;
+    /* font-family: 'Teko', sans-serif; */
+    font-size: 20px;
+    margin-right: 1000px;
+    color: #22418b;
+}
+
+.caption {
+    display: inline-block;
+    margin-top: 0;
+    /* font-family: 'Righteous'; */
+    color: #fcbe3f;
+    font-size: 20px;
+    position: relative;
+    bottom: 46px;
+    left: 282px;
+}
+#btn1 {
+    color: #ef2346;
+    border: 1px solid #ef2346;
+    background-color: transparent;
+    position: relative;
+    left: 730px;
+    top: -510px;
+}
+#btn2 {
+    color: aliceblue;
+    background-color: #ef2346;
+    border: 1px solid #ef2346;
+    position: relative;
+    top: -130px;
+    left: -680px;
+}
+
+.btn{
+    transition: 0.6s;
+    padding: 13px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 0;
+    margin-left: 5px;
+}
+#btn2:hover {
+    background-color: transparent;
+    color: #ef2346;
+}
+
+#btn1:hover {
+    text-shadow: 1px 1px 20px 70px #252525;
+    background-color: #ef2346;
+    color: aliceblue;
+}
