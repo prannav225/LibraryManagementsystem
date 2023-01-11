@@ -3,9 +3,9 @@ import { useNavigate } from "react-router-dom";
 import '../styles/addbook.css'
 const AddBook = () => {
     let [title, setTitle] = useState("")
-    let [author, setAuthor] = useState("")
+    let [authors, setAuthor] = useState("")
     let [categories, setCategories] = useState("")
-    let [pagecount, setPagecount] = useState("")
+    let [pageCount, setPagecount] = useState("")
     let [shortDescription, setShortdescription] = useState("")
     let [longDescription, setLongdescription] = useState("")
     let [thumbnailUrl, setThumbnailUrl] = useState("")
@@ -14,7 +14,7 @@ const AddBook = () => {
         e.preventDefault();
 
         //data to be posted
-        let bookData = { title, author, categories, pagecount, shortDescription, longDescription, thumbnailUrl }
+        let bookData = { title, authors, categories, pageCount, shortDescription, longDescription, thumbnailUrl }
 
         //posting to server
         fetch('http://localhost:2000/books', {
@@ -38,13 +38,13 @@ const AddBook = () => {
                             <input type="text" placeholder="Title of the book" required value={title} onChange={(e) => setTitle(e.target.value)} />
                         </div>
                         <div className="authors">
-                            <input type="text" placeholder="Written By" required value={author} onChange={(e) => setAuthor(e.target.value)} />
+                            <input type="text" placeholder="Written By" required value={authors} onChange={(e) => setAuthor(e.target.value)} />
                         </div>
                         <div className="categories">
                             <input type="text" placeholder="Category" required value={categories} onChange={(e) => setCategories(e.target.value)} />
                         </div>
                         <div className="pagecount">
-                            <input type="text" placeholder="No. of pages" required value={pagecount} onChange={(e) => setPagecount(e.target.value)} />
+                            <input type="text" placeholder="No. of pages" required value={pageCount} onChange={(e) => setPagecount(e.target.value)} />
                         </div>
                         <div className="shortdescription">
                             <textarea name="shortdescription" id="" cols="30" rows="2" value={shortDescription} onChange={(e) => setShortdescription(e.target.value)} required>
