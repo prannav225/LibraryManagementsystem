@@ -24,24 +24,26 @@ const AddUser = () => {
     }
     let navigate = useNavigate()
     return (
-        <div className="addbook" id="contanier">
-            <h1>Add a new user</h1>
-            <div className="form" onSubmit={handleSubmit}>
-                <form action="">
-                    <div className="name">
-                        <input type="text" placeholder="Enter your name" required value={name} onChange={(e) => setName(e.target.value)} />
-                    </div>
-                    <div className="age">
-                        <input type="number" placeholder="Enter your age" min={12} max={100} required value={age} onChange={(e) => setAge(e.target.value)} />
-                    </div>
-                    <div className="email">
-                        <input type="email" placeholder="Enter your mail id" required value={email} onChange={(e) => setEmail(e.target.value)} />
-                    </div>
-                    <div className="phonenumber">
-                        <input type="tel" placeholder="PhoneNumber" minLength={10} maxLength={10} required value={phonenumber} onChange={(e) => setPhonenumber(e.target.value)} />
-                    </div>
-                    <button className="btn">Add User</button>
-                </form>
+        <div className="page">
+                <h1>Add a new user</h1>
+            <div className="addbook" id="contanier">
+                <div className="form" onSubmit={handleSubmit}>
+                    <form action="">
+                        <div className="name">
+                            <input type="text" placeholder="Enter your name" required value={name} onChange={(e) => setName(e.target.value)} />
+                        </div>
+                        <div className="age">
+                            <input type="number" placeholder="Enter your age" min={12} max={100} required value={age} onChange={(e) => setAge(e.target.value)} />
+                        </div>
+                        <div className="email">
+                            <input type="email" placeholder="Enter your mail id" required value={email} onChange={(e) => setEmail(e.target.value)} />
+                        </div>
+                        <div className="phonenumber">
+                            <input type="tel" placeholder="PhoneNumber" minLength={10} maxLength={10} required value={phonenumber} onChange={(e) => setPhonenumber(e.target.value)} />
+                        </div>
+                        <button className="btn">Add User</button>
+                    </form>
+                </div>
             </div>
         </div>
     );
