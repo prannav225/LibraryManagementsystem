@@ -5,6 +5,7 @@ import Adminlogin from './components/admin-login'
 import Userlogin from './components/user-login'
 import Adminhome from './components/adminhome';
 import UserHome from './components/userhome';
+import Error from './components/error';
 function App() {
   return (
     <div className="App">
@@ -15,6 +16,8 @@ function App() {
           <Route path='/user-login' element={<Userlogin />}/>
           <Route path='/admin/*' element={<Adminhome />}/>
           <Route path='/user/*' element={<UserHome />}/>
+          <Route path='*' element={<Error />}/>
+          
         </Routes>
       </BrowserRouter>
 
